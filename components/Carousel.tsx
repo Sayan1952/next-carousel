@@ -46,10 +46,10 @@ const Carousel = () => {
     <div className="relative flex items-center justify-center w-full px-28 h-[900px] overflow-hidden bg-slate-300 ">
       {/* Previous Button */}
       <button
-        className="absolute left-24 top-1/2 transform translate-x-1/2 -translate-y-1/2 bg-slate-300 text-[#4524FF] w-24 h-24 border-r-4 rounded-full border-[#AFFD07] hover:bg-gray-300 z-20 flex items-center justify-center text-2xl"
+        className="absolute left-[94px] top-1/2 transform translate-x-1/2 -translate-y-1/2 bg-slate-300 text-[#4524FF] w-24 h-24 border-[7px] border-l-slate-300 border-t-slate-300 -rotate-45 rounded-full border-[#AFFD07] hover:bg-gray-300 z-20 flex items-center justify-center text-2xl"
         onClick={prevSlide}
       >
-        <FontAwesomeIcon icon={faAngleLeft} size="2x"/>
+        <FontAwesomeIcon icon={faAngleLeft} size="2x" className="transform rotate-45"/>
       </button>
 
       {/* Slides */}
@@ -82,10 +82,10 @@ const Carousel = () => {
 
       {/* Next Button */}
       <button
-        className="absolute right-24 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-300 text-[#4524FF] w-24 h-24 rounded-full hover:bg-gray-300 z-20 flex items-center justify-center text-2xl"
+        className="absolute right-[94px] top-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#AFFD07] bg-slate-300 text-[#4524FF] border-[7px] w-24 h-24 rounded-full  border-r-slate-300 border-b-slate-300 -rotate-45 hover:bg-gray-300 z-20 flex items-center justify-center text-2xl"
         onClick={nextSlide}
       >
-        <FontAwesomeIcon icon={faAngleRight} size="2x"/>
+        <FontAwesomeIcon icon={faAngleRight} size="2x" className="transform rotate-45"/>
       </button>
     </div>
   );
